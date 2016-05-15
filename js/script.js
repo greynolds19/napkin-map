@@ -151,28 +151,47 @@ function insidePop(){
   console.log('popup width is '+popupWidth);
 }
 
-//when screen is too small at refresh:
-// if (($(window).width() < 750) || ($(window).height() < 700)){
-//   // alert('This site is designed for desktop screens only. Come back and check out Ridgewood with a larger screen!');
-//   $('.tooSmall').removeClass('hidden');
-//   $('#mask').removeClass('hidden');
-// }
+// when screen is too small at refresh:
+if (($(window).width() < 750) || ($(window).height() < 700)){
+  // alert('This site is designed for desktop screens only. Come back and check out Ridgewood with a larger screen!');
+  $('.tooSmall').removeClass('hidden');
+  $('#mask').removeClass('hidden');
+}
 
 
-//when screen is re-sized too small
-// $(window).resize(function() {
-//   if (($(window).width() < 750) || ($(window).height() < 700)){
-//     $('.tooSmall').removeClass('hidden');
-//     $('#mask').removeClass('hidden');
-//    }
-//   else {
-//   $('.tooSmall').addClass('hidden');
-//   $('#mask').addClass('hidden');
-// }
+// when screen is re-sized too small
+$(window).resize(function() {
+  if (($(window).width() < 750) || ($(window).height() < 700)){
+    $('.tooSmall').removeClass('hidden');
+    $('#mask').removeClass('hidden');
+   }
+  else {
+  $('.tooSmall').addClass('hidden');
+  $('#mask').addClass('hidden');
+}
+});
+
+
+
+
+//combine click and hover
+// $('.icon.beer').click(function() {
+//     $(this).unbind('mouseout');  
+// }).mouseover(function() {
+//     $('.beer').attr('src', function(index, attr) {
+//     return attr.replace('BLACK', 'RED');
+// }).mouseout(function() {
+//     $('.beer').attr('src', function(index, attr) {
+//     return attr.replace('RED', 'BLACK');
 // });
 
-
-
+// $('.icon.food').click(function() {
+//     $('#.beer').bind('mouseout', function() {
+//      $('.beer').attr('src', function(index, attr) {
+//      return attr.replace('RED', 'BLACK');   
+//     });
+//     $(this).parent().hide();
+// });
 
 
 
@@ -190,12 +209,18 @@ $('.icon.beer').hover(function() {
 });
 });
 
-//BEER: roll over place and highlight relevant icons
+// //BEER: roll over place and highlight relevant icons
 $('.place.beer').hover(function() {
   $('.icon.beer').attr('src', '/img/BEER RED.png');
 }, function() {
-  $('.icon.beer').attr('src', '/img/BEER.png');
+  $('.icon.beer').attr('src', '/img/BEER BLACK.png');
 });
+
+
+
+ 
+
+
 
 
 //FOOD: roll over icon and highlight relevant places
@@ -271,24 +296,6 @@ $('.place.butcher').hover(function() {
 
 
 
-
-
-//BEER: click on icon and highlight relevant places
-$('.icon.beer').click(function() {
-  $('.beer').attr('src', function(index, attr) {
-    return attr.replace('BLACK', 'BLACK');
-  })
-}, function() {
-  $('.beer').attr('src', function(index, attr) {
-    return attr.replace('RED', 'BLACK');
-});
-});
-//BEER: click on place and highlight relevant icons
-$('.place.beer').hover(function() {
-  $('.icon.beer').attr('src', '/img/BEER RED.png');
-}, function() {
-  $('.icon.beer').attr('src', '/img/BEER.png');
-});
 
 
 
