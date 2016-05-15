@@ -211,9 +211,9 @@ $('.icon.beer').hover(function() {
 
 // //BEER: roll over place and highlight relevant icons
 $('.place.beer').hover(function() {
-  $('.icon.beer').attr('src', '/img/BEER RED.png');
+  $('.icon.beer').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BEER RED.png');
 }, function() {
-  $('.icon.beer').attr('src', '/img/BEER BLACK.png');
+  $('.icon.beer').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BEER BLACK.png');
 });
 
 
@@ -235,9 +235,9 @@ $('.icon.food').hover(function() {
 });
 //FOOD: roll over place and highlight relevant icons
 $('.place.food').hover(function() {
-  $('.icon.food').attr('src', '/img/FOOD RED.png');
+  $('.icon.food').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/FOOD RED.png');
 }, function() {
-  $('.icon.food').attr('src', '/img/FOOD.png');
+  $('.icon.food').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/FOOD.png');
 });
 
 //COFFEE: roll over icon and highlight relevant places
@@ -252,9 +252,9 @@ $('.icon.coffee').hover(function() {
 });
 //COFFEE: roll over place and highlight relevant icons
 $('.place.coffee').hover(function() {
-  $('.icon.coffee').attr('src', '/img/COFFEE RED.png');
+  $('.icon.coffee').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/COFFEE RED.png');
 }, function() {
-  $('.icon.coffee').attr('src', '/img/COFFEE.png');
+  $('.icon.coffee').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/COFFEE.png');
 });
 
 //BOOK: roll over icon and highlight relevant places
@@ -269,9 +269,9 @@ $('.icon.book').hover(function() {
 });
 //BOOK: roll over place and highlight relevant icons
 $('.place.book').hover(function() {
-  $('.icon.book').attr('src', '/img/BOOKS RED.png');
+  $('.icon.book').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BOOKS RED.png');
 }, function() {
-  $('.icon.book').attr('src', '/img/BOOKS.png');
+  $('.icon.book').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BOOKS.png');
 });
 
 //BUTCHER: roll over icon and highlight relevant places
@@ -286,9 +286,9 @@ $('.icon.butcher').hover(function() {
 });
 //BUTCHER: roll over place and highlight relevant icons
 $('.place.butcher').hover(function() {
-  $('.icon.butcher').attr('src', '/img/BUTCHER RED.png');
+  $('.icon.butcher').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BUTCHER RED.png');
 }, function() {
-  $('.icon.butcher').attr('src', '/img/BUTCHER.png');
+  $('.icon.butcher').attr('src', 'https://github.com/greynolds19/napkin-map/raw/master/img/BUTCHER.png');
 });
 
 
