@@ -115,6 +115,7 @@ function res() {
         $('.benchright').css('width',(windowwidth-basemapwidth)*.5+5+'px');
         // console.log("just with basemap is     "+($('.basemap').outerWidth()*.25));
         // console.log("just with the window is"+($(window).outerWidth()*.25))
+        // alerts("height of napkin is"+($(window).height()));
 }
 
   

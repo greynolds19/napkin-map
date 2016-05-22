@@ -14,18 +14,20 @@ body {
     width: 100%;
     /*background-size: 1400px 780px;*/
     background: url('https://github.com/greynolds19/napkin-map/raw/master/img/wood texture.jpg') no-repeat center center; 
+    /*background: url('/../img/bench.jpg');*/
     background-size: initial;
 }
 
 .benchleft {
     position: fixed;
-/*    bottom: 0;
+/*  bottom: 0;
     left: 0;*/
     height: 100%;
     width: 100%;
     /*width is set in js to take into account screen size*/
     background: url('https://github.com/greynolds19/napkin-map/raw/master/img/wood texture.jpg') no-repeat left center;/*this grabs from left side of image */
-    /*background-size: initial;*/
+    /*background: url('/../img/bench.jpg') no-repeat left center;*/
+    background-size: initial;
     z-index: 2;
 }
     
@@ -35,6 +37,7 @@ body {
     height: 100%;
     width: 0%;
     background: url('https://github.com/greynolds19/napkin-map/raw/master/img/wood texture.jpg') no-repeat left center;
+    /*background: url('/../img/bench.jpg') no-repeat left center;*/
     background-size: initial;
     z-index: 2;
 }
@@ -345,8 +348,8 @@ body {
 .nowadays {
  /*   top: 598px;
     left: 712px;*/
-    top: 81.5%;
-    left: 63.4%;
+    top: 81.2%;
+    left: 62.9%;
 }
 .littleEgypt {
 /*    top: 270px;
@@ -398,8 +401,8 @@ body {
     position: absolute;
 }
 .soccer {
-    top: 19.5%;
-    left: 31.5%;
+    top: 18%;
+    left: 30%;
     position: absolute;
 }
 .pigeons {
