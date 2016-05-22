@@ -294,14 +294,10 @@ $('.place.butcher').hover(function() {
 
 
 
-
-
-
-
-
-
-
-
+//Creating the spinner thing that shows up while page is loading
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
 
 
 

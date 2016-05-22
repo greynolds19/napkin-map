@@ -155,15 +155,15 @@ body {
 }
 .cataniapage {
     /*making this same size as basemap. do this automatically if it works*/
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/catania/catania.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/CATANIA/catania.png");
     /*background-image: url("/img/TOPOS PAGE.png");*/
 }
 .gottscheerpage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/gotscheer/gottscheer.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/GOTSCHEER/gottscheer.png");
 }
 .juliaspage {
     /*making this same size as basemap. do this automatically if it works*/
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/julias/julias.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/JULIAS/JULIAS.png");
     /*background-image: url("/img/TOPOS PAGE.png");*/
 }
 .morscherspage {
@@ -171,26 +171,26 @@ body {
 }
 .nowadayspage {
     /*making this same size as basemap. do this automatically if it works*/
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/nowadays/nowadays.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/NOWADAYS/nowadays.png");
     /*background-image: url("/img/TOPOS PAGE.png");*/
 }
 .littleegyptpage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/littleegypt/littleegypt.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/littleegypt/LITTLEEGYPT.png");
 }
 .grimaldispage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/grimaldi/grimaldi.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/GRIMALDI/grimaldi.png");
 }
 .amapage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/ama/ama.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/AMA/ama.png");
 }
 .normaspage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/normas/normas.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/NORMAS/normas.png");
 }
 .thespotpage {
     background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/thespot/thespot.png");
 }
 .hetmanspage {
-    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/hetmans/hetman.png");
+    background-image: url("https://github.com/greynolds19/napkin-map/raw/master/img/popups/HETMANS/HETMAN.png");
 }
 
 
@@ -470,29 +470,16 @@ body {
 }
 
 
-/*testing the use of filter to modify image color*/
-/*.gottscheer {
-
-     -webkit-filter: invert(80%);
-    filter: invert(80%);
-
-    -webkit-filter: sepia(50%);
-    filter: sepia(50%);
-
-    -webkit-filter: saturate(10000%);
-    filter: saturate(10000%);
-
-    -webkit-filter: hue-rotate(100%);
-    filter: hue-rotate(100%);
-}*/
-
-/*.catania {
-    background-color: #c60;
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat rgba(249, 249, 249, 1);
+    /*can also make a cool custom one here: http://loading.io/*/
 }
-.catania {
-    -webkit-mask-image: url('http://i.stack.imgur.com/gZvK4.png');
-}*/
-/*the above proves that masking the image does not seem to work. It doesn't grab a precise mask at all*/
 
 
 
