@@ -136,13 +136,13 @@ function insidePop(){
   $('.x2').css('right',(windowWidth-popupWidth)*.5+95+'px');
   $('.x3').css('right',(windowWidth-popupWidth)*.5+102+'px');
 
-  $('.address').css('left',(windowWidth-popupWidth)*.5+145+'px');
+  $('.address').css('left',(windowWidth-popupWidth)*.5+'px');
 
-  $('.web').css('left',(windowWidth-popupWidth)*.5+395+'px');
+  $('.web').css('left',(windowWidth-popupWidth)*.5+200+'px');
   $('.weblong').css('left',(windowWidth-popupWidth)*.5+348+'px');
 
   //height
-  $('.address, .web, .weblong').css('bottom',(windowHeight-popupHeight)*.5+110+'px');
+  $('.address, .web, .weblong').css('bottom',(windowHeight-popupHeight)*.5+120+'px');
   $('.x, .x2, .x3').css('top',(windowHeight-popupHeight)*.5+110+'px');
 
 
@@ -153,7 +153,7 @@ function insidePop(){
 }
 
 // when screen is too small at refresh:
-if (($(window).width() < 750) || ($(window).height() < 700)){
+if (($(window).width() < 750) || ($(window).height() < 600)){
   // alert('This site is designed for desktop screens only. Come back and check out Ridgewood with a larger screen!');
   $('.tooSmall').removeClass('hidden');
   $('#mask').removeClass('hidden');
@@ -162,7 +162,7 @@ if (($(window).width() < 750) || ($(window).height() < 700)){
 
 // when screen is re-sized too small
 $(window).resize(function() {
-  if (($(window).width() < 750) || ($(window).height() < 700)){
+  if (($(window).width() < 750) || ($(window).height() < 600)){
     $('.tooSmall').removeClass('hidden');
     $('#mask').removeClass('hidden');
    }
@@ -294,25 +294,97 @@ $('.place.butcher').hover(function() {
 
 
 
-
 //Creating the spinner thing that shows up while page is loading
 $(window).load(function() {
   $(".loader").fadeOut("slow");
 })
 
 
+//saving working newspaper spin versions before trying new way
+// //making page do cool spinny thing
+$(".backInTheDay").click(function() {
+  $(".md-modal").addClass("md-show");
+});
+
+// //close page with cool spinny thing
+// $(".md-close").click(function() {
+//   $(".md-modal").removeClass("md-show");
+// });
+
+
+
+//make newspaper spin work for every site upon click
+$(".houdini").click(function() {
+  // .queue(function (n) {
+    $('.pageImage').attr('src','https://github.com/greynolds19/napkin-map/raw/master/img/popups/HOUDINIS/HOUDINI.png');
+
+  // n(); //dequeue the next item in the queue
+  // .queue(function (n) {
+    $(".md-modal").addClass("md-show");
+  // n(); //dequeue the next item in the queue
+
+});
+
+$(".topos").click(function() {
+  // .queue(function (n) {
+    $('.pageImage').attr('src','https://github.com/greynolds19/napkin-map/raw/master/img/popups/topos/topos.png');
+
+  // n(); //dequeue the next item in the queue
+  // .queue(function (n) {
+    $(".md-modal").addClass("md-show");
+  // n(); //dequeue the next item in the queue
+
+});
+
+// $(".topos").click(function() {
+//   $('.pageImage').attr('src','https://github.com/greynolds19/napkin-map/raw/master/img/popups/topos/topos.png');
+//   $(".md-modal").addClass("md-show");
+// });
+
+
+// $(".topos").click(function() {
+//   $('.pageImage').attr('src','https://github.com/greynolds19/napkin-map/raw/master/img/popups/topos/topos.png', function () {
+//     $(".md-modal").addClass("md-show");
+//   });
+// });
+
+
+// $(".trashwrapper").on("mouseenter", function(){
+//    $(".delete").animate({width: "150px"}, 300, function () {
+//          $(".delete").text("Delete?");
+//    });
+// });
 
 
 
 
+// function Typer() {
+//     // Some stuff
+
+//     $(anyDomElement).trigger("myCustomEvent");
+// }
+
+
+// $(anyDomElement).on("myCustomEvent", function() {
+//     // Some other stuff
+// });
 
 
 
+// $('#label')
+//     .queue(function (n) {
+//         ...your code here...
+//         n(); 
+//     })
+//     .delay(5000)
+//     .queue(function (n) {
+//         ...your second bit of code here...
+//         n(); 
+//     });
 
-
-
-
-
-
+//close
+$(".md-close").click(function() {
+  $(".md-modal").removeClass("md-show");
+});
 
 
